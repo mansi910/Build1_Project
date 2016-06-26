@@ -3,7 +3,7 @@ package com.javacodegeeks.examples.junitmavenexample;
 public class Calculator implements ICalculator {
 
 	public int sum(int a, int b) {
-		return a + b	//returns sum of 2 numbers
+		return a + b;	//returns sum of 2 numbers
 	}
 
 	public int subtraction(int a, int b) {
