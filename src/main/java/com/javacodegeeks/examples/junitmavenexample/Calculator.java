@@ -21,7 +21,7 @@ public class Calculator implements ICalculator {
 			throw new Exception("Divider can't be zero");
 		}
 
-		return a / b;	//returns division of 2 numbers
+		return a / b	//returns division of 2 numbers
 	}
 
 	
