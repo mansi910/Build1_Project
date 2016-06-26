@@ -3,16 +3,16 @@ package com.javacodegeeks.examples.junitmavenexample;
 public class Calculator implements ICalculator {
 
 	public int sum(int a, int b) {
-		return a + b;
+		return a + b	//returns sum of 2 numbers
 	}
 
 	public int subtraction(int a, int b) {
-		return a - b;
+		return a - b;	//returns difference of 2 numbers
 	}
 
 	
 	public int multiplication(int a, int b) {
-		return a * b;
+		return a * b;	//returns product of 2 numbers
 	}
 
 	
@@ -21,7 +21,7 @@ public class Calculator implements ICalculator {
 			throw new Exception("Divider can't be zero");
 		}
 
-		return a / b;
+		return a / b;	//returns division of 2 numbers
 	}
 
 	
