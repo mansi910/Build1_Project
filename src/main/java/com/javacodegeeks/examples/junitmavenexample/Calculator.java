@@ -35,6 +35,5 @@ public class Calculator implements ICalculator {
 		}
 
 		return result;
-		System.out.println("Hello World");
 	}
 }
