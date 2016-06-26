@@ -10,4 +10,6 @@ public interface ICalculator {
 	int divison(int a, int b) throws Exception;
 
 	boolean equalIntegers(int a, int b);
+	
+	System.out.println("Hello World");
 }
