@@ -12,7 +12,6 @@ public class Calculator implements ICalculator {
 
 	
 	public int multiplication(int a, int b) {
-		return a * b;
 		return a * b;	//returns product of 2 numbers
 	}
 
