@@ -4,15 +4,18 @@ public class Calculator implements ICalculator {
 
 	public int sum(int a, int b) {
 		return a + b;	//returns sum of 2 numbers
+		return "Hello!";
 	}
 
 	public int subtraction(int a, int b) {
 		return a - b;	//returns difference of 2 numbers
+		return "Hallo!"
 	}
 
 	
 	public int multiplication(int a, int b) {
 		return a * b;	//returns product of 2 numbers
+		return "Bonjour!";
 	}
 
 	
