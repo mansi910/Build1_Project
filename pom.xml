@@ -12,50 +12,32 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.0-beta-2</version>
-				<configuration>
-					<reportPlugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-checkstyle-plugin</artifactId>
-							<version>2.4</version>
-						</plugin>
-					</reportPlugins>
-				</configuration>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.2</version>
+				<!-- nothing here -->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.0-beta-2</version>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2-beta-4</version>
 				<configuration>
-					<reportPlugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-pmd-plugin</artifactId>
-							<version>2.5</version>
-							<configuration>
-								<!-- PMD options -->
-								<targetJdk>1.6</targetJdk>
-								<aggregate>true</aggregate>
-								<format>xml</format>
-								<rulesets>
-									<ruleset>/pmd-rules.xml</ruleset>
-								</rulesets>
-								<!-- CPD options -->
-								<minimumTokens>50</minimumTokens>
-								<ignoreIdentifiers>true</ignoreIdentifiers>
-							</configuration>
-						</plugin>
-					</reportPlugins>
- 				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>com.wakaleo.code-quality</groupId>
-						<artifactId>pmd-rules</artifactId>
-						<version>1.0.1</version>
-					</dependency>
-				</dependencies>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>org.sample.App</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
