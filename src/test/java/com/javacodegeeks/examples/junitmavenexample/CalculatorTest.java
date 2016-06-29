@@ -21,7 +21,7 @@ public class CalculatorTest {
 
 	@Before
 	public void beforeEachTest() {
-		logger.log"This is executed before each Test");
+		logger.log("This is executed before each Test");
 	}
 
 	@After
