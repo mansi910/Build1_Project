@@ -1,6 +1,5 @@
 package com.javacodegeeks.examples.junitmavenexample;
 
-import java.util.logging.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -11,7 +10,6 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-private static final Logger logger= Logger.getLogger( CalculatorTest.class.getName() );
 public class CalculatorTest {
 	private static ICalculator calculator;
 
@@ -22,12 +20,12 @@ public class CalculatorTest {
 
 	@Before
 	public void beforeEachTest() {
-		logger.log("This is executed before each Test");
+		System.out.println("This is executed before each Test");
 	}
 
 	@After
 	public void afterEachTest() {
-		logger.log("This is exceuted after each Test");
+		System.out.println("This is exceuted after each Test");
 	}
 
 	@Test
@@ -43,8 +41,8 @@ public class CalculatorTest {
 			int result = calculator.divison(10, 2);
 
 			assertEquals(5, result);
-		} catch (ArithmeticException e) {
-			logger.log(e);
+		} catch (Exception e) {
+			e.printStackTrace(System.err);
 		}
 	}
 
@@ -68,4 +66,3 @@ public class CalculatorTest {
 
 		assertTrue(result == 9);
 	}
-}
