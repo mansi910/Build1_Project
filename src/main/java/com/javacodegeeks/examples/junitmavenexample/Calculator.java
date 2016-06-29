@@ -21,17 +21,7 @@ public class Calculator implements ICalculator {
 	
 	public int divison(int a, int b) throws Exception {
 		if (b == 0) {
-			throw new Exception("Divider can't be zero");
-		}
-
-		return a / b;	//returns division of 2 numbers
-		/*System.out.println("Hello World");
-		System.out.println("Hello World");*/
-	}
-
-	public int divison(int a, int b) throws Exception {
-		if (b == 0) {
-			throw new Exception("Divider can't be zero");
+			throw new ArithmeticException("Divider can't be zero");
 		}
 
 		return a / b;	//returns division of 2 numbers
