@@ -36,7 +36,7 @@
 							<version>2.5</version>
 							<configuration>
 								<!-- PMD options -->
-								<targetJdk>1.6</targetJdk>
+								<targetJdk>1.8</targetJdk>
 								<aggregate>true</aggregate>
 								<format>xml</format>
 								<rulesets>
@@ -49,13 +49,6 @@
 						</plugin>
 					</reportPlugins>
  				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>com.wakaleo.code-quality</groupId>
-						<artifactId>pmd-rules</artifactId>
-						<version>1.0.1</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
