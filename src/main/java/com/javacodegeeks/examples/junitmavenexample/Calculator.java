@@ -25,8 +25,6 @@ public class Calculator implements ICalculator {
 		}
 
 		return a / b;	//returns division of 2 numbers
-		/*System.out.println("Hello World");
-		System.out.println("Hello World");*/
 	}
 	
 	public boolean equalIntegers(int a, int b) {
