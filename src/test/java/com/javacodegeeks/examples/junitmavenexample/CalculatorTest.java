@@ -11,6 +11,7 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
+private static final Logger logger= Logger.getLogger( CalculatorTest.class.getName() );
 public class CalculatorTest {
 	private static ICalculator calculator;
 
@@ -47,7 +48,7 @@ public class CalculatorTest {
 		}
 	}
 
-	@Test(expected = Exception.class)
+	@Test(expected = ArithmeticException.class)
 	public void testDivisionException() throws ArithmeticException {
 		calculator.divison(10, 0);
 	}
