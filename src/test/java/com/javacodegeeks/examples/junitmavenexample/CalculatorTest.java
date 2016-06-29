@@ -66,3 +66,4 @@ public class CalculatorTest {
 
 		assertTrue(result == 9);
 	}
+}
