@@ -1,5 +1,6 @@
 package com.javacodegeeks.examples.junitmavenexample;
 
+import java.util.logging;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -20,12 +21,12 @@ public class CalculatorTest {
 
 	@Before
 	public void beforeEachTest() {
-		System.out.println("This is executed before each Test");
+		logger.log"This is executed before each Test");
 	}
 
 	@After
 	public void afterEachTest() {
-		System.out.println("This is exceuted after each Test");
+		logger.log("This is exceuted after each Test");
 	}
 
 	@Test
