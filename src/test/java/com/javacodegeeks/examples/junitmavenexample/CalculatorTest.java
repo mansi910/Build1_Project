@@ -43,7 +43,7 @@ public class CalculatorTest {
 
 			assertEquals(5, result);
 		} catch (Exception e) {
-			e.printStackTrace(logger.log);
+			logger.log(e);
 		}
 	}
 
