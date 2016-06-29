@@ -48,7 +48,7 @@ public class CalculatorTest {
 		}
 	}
 
-	@Test(expected = ArithmeticException.class)
+	@Test(expected = Exception.class)
 	public void testDivisionException() throws ArithmeticException {
 		calculator.divison(10, 0);
 	}
