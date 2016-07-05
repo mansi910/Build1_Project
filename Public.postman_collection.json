@@ -1,0 +1,34 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Public",
+		"_postman_id": "9fd87281-c6a2-7490-dc8f-45252621ac65",
+		"description": "Public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://services.odata.org/V3/OData/OData.svc/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": "tests[\"Status code is 200\"] = responseCode.code === 200;"
+					}
+				}
+			],
+			"request": {
+				"url": "http://services.odata.org/V3/OData/OData.svc/",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
